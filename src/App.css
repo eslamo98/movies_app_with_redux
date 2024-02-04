@@ -1,0 +1,23 @@
+@import url("./Generals/colors.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--font-primary);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}

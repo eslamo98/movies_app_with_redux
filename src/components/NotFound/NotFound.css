@@ -1,0 +1,14 @@
+.loading {
+    height: calc(100vh - 144px);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.no-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

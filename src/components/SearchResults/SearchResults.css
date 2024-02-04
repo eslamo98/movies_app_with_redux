@@ -1,0 +1,59 @@
+@import url("../../Generals/colors.css");
+.result {
+    padding: 40px;
+}
+.movies-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movies-heading {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search input {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 30px;
+    text-indent: 10px;
+    color: var(--font-primary);
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+    .movies-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .movies-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .movies-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .movies-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

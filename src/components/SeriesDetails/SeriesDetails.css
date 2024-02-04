@@ -1,0 +1,95 @@
+@import url("../../Generals/colors.css");
+
+.chosen-movie {
+    padding: 40px 40px;
+}
+
+.movie-details {
+    display: flex;
+    gap: 20px;
+}
+
+.movie-info {
+    width: 70%;
+    flex-basis: 70%;
+}
+
+.movie-info h1 {
+    font-weight: 400;
+    /* letter-spacing: 2px; */
+    font-size: 2.5rem;
+}
+
+.movie-info .rating {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.movie-info .rating .rating-key {
+    color: var(--font-secondary);
+}
+.movie-info .rating .highlight {
+    color: orange;
+}
+
+.movie-poster {
+    width: 30%;
+    flex-basis: 30%;
+}
+
+.movie-extra-info {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;
+}
+
+.info-content {
+    display: flex;
+    gap: 20px;
+}
+
+.info-title {
+    width: 100px;
+}
+
+.info-value {
+    color: var(--font-secondary);
+}
+
+@media (max-width: 1140px) {
+    .movie-info {
+        width: 60% !important;
+        flex-basis: 60% !important;
+    }
+
+    .movie-poster {
+        width: 40% !important;
+        flex-basis: 40% !important;
+    }
+}
+
+@media (max-width: 999px) {
+    .movie-details {
+        flex-direction: column;
+    }
+    .movie-info {
+        order: 2;
+        width: 100% !important;
+        flex-basis: 100% !important;
+    }
+
+    .movie-poster {
+        order: 1;
+        width: 100% !important;
+        flex-basis: 100% !important;
+        
+    }
+
+    .movie-poster img {
+        max-width: 400px !important;
+        margin: auto;
+    }
+}

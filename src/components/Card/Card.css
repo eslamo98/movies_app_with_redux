@@ -1,0 +1,44 @@
+@import url("../../Generals/colors.css");
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    transition: transform 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 321px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-details {
+    padding: 15px 10px;
+    background-color: transparent;
+    flex-grow: 5;
+    margin-top: 16px;
+    width: 100%;
+    min-height: 134px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 550px) {
+    .card {
+        max-width: 340px;
+        margin: auto;
+    }
+}
+

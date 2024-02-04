@@ -1,0 +1,27 @@
+.loading {
+    height: calc(100vh - 144px);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.no-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgba(86, 56, 253, 1);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: rgba(86, 56, 253, 0.6);
+}
+
